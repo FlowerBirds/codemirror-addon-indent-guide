@@ -40,4 +40,4 @@ Codemirror addon to include indentation guidelines.
 ```
 其中只有设置tabSize: 4和indentUnit: 2的情况下，空格显示点号，Tab显示箭头，如demo中的index.html。
 
-[Demo](/FlowerBirds/codemirror-addon-indent-guide/blob/master/codemirror-with-space-guide.png?raw=true)
+[Demo](https://github.com/FlowerBirds/codemirror-addon-indent-guide/blob/master/codemirror-with-space-guide.png?raw=true)
