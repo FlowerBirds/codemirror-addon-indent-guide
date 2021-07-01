@@ -40,3 +40,6 @@ Codemirror插件，支持显示空格和Tab，便于辨识，尤其对于编写P
 其中只有设置tabSize: 4和indentUnit: 2的情况下，空格显示点号，Tab显示箭头，如demo中的index.html。
 
 ![Demo](https://github.com/FlowerBirds/codemirror-addon-indent-guide/raw/master/codemirror-with-space-guide.png)
+
+PyCharm中显示空格配置如下图：
+![pycharm](https://github.com/FlowerBirds/codemirror-addon-indent-guide/raw/master/pycharm-setting-show-whitespace.png)
