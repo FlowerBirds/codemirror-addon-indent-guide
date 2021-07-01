@@ -31,7 +31,6 @@
   /**
    * Heavily inspired by https://github.com/lkcampbell/brackets-indent-guides
    */
-
   function indentGuideAddon(cm, val, prev) {
     if (prev == CodeMirror__default['default'].Init) {
       prev = false;
