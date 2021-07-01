@@ -1,8 +1,7 @@
 # codemirror-addon-indent-guide ![Lint](https://github.com/assisrafael/codemirror-addon-indent-guide/workflows/Lint/badge.svg?branch=master) 
 
 
-
-Codemirror addon to include indentation guidelines.
+Codemirror插件，支持显示空格和Tab，便于辨识，尤其对于编写Python代码时，查看代码缩进尤为重要。
 
 # How to use
 
