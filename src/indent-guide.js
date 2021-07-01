@@ -3,7 +3,8 @@ import CodeMirror from 'codemirror';
 CodeMirror.defineOption('indentGuide', false, indentGuideAddon);
 
 const GUIDE_CLASS = 'indent-guide';
-
+const GUIDE_BLANK_CLASS = 'indent-blank-guide';
+const GUIDE_TAB_CLASS = 'tab-indent-guide';
 /**
  * Heavily inspired by https://github.com/lkcampbell/brackets-indent-guides
  */
@@ -36,7 +37,7 @@ function indentGuideAddon(cm, val, prev) {
         }
 
         if (char === '\t') {
-          return GUIDE_CLASS;
+          return GUIDE_TAB_CLASS;
         }
 
         if (char !== ' ') {
@@ -52,6 +53,10 @@ function indentGuideAddon(cm, val, prev) {
         if (char === ' ' && isTabStart) {
           return GUIDE_CLASS;
         }
+		
+		if (char === ' ') {
+			return GUIDE_BLANK_CLASS;
+		}
 
         return null;
       },

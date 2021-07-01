@@ -1,4 +1,19 @@
-.cm-indent-guide {
+.cm-indent-guide , .cm-tab-indent-guide > .cm-tab{
   position: relative;
-  border-left: 1px dotted #bbb;
+  // border-left: 1px dotted #bbb;
+}
+.cm-indent-blank-guide {
+  position: relative;
+}
+.cm-indent-guide:after, .cm-indent-blank-guide:after {
+	content: '.';
+	position: absolute;
+	right: -0px;
+    color: #dadada;
+}
+.cm-tab-indent-guide > .cm-tab:after {
+	content: '→';
+	position: absolute;
+	right: -0px;
+    color: #dadada;
 }
