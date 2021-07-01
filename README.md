@@ -39,3 +39,5 @@ Codemirror addon to include indentation guidelines.
     </script>
 ```
 其中只有设置tabSize: 4和indentUnit: 2的情况下，空格显示点号，Tab显示箭头，如demo中的index.html。
+
+[Demo](./codemirror-with-space-guide.png)
