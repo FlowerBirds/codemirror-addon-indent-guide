@@ -1,37 +1,41 @@
 # codemirror-addon-indent-guide ![Lint](https://github.com/assisrafael/codemirror-addon-indent-guide/workflows/Lint/badge.svg?branch=master) 
 
-[![NPM](https://nodei.co/npm/codemirror-addon-indent-guide.png)](https://nodei.co/npm/codemirror-addon-indent-guide/)
+
 
 Codemirror addon to include indentation guidelines.
 
 # How to use
 
-1. Install the library from npm
-
-```bash
-npm i codemirror-addon-indent-guide
+1.引入库和插件js等：
 ```
-
-2. Import the module addon after importing codemirror module
-
-```javascript
-import 'codemirror-addon-indent-guide';
+    <script src="codemirror.min.js"></script>
+    <link rel="stylesheet" href="codemirror.min.css"/>
+    <script src="clike.min.js"></script>
+    <script src="../dist/indent-guide.js"></script>
+    <link rel="stylesheet" href="../src/indent-guide.css" />
 ```
-
-3. Setup `indentGuide` and `indentUnit` options when initializing codemirror editor. Example:
-
-```javascript
-CodeMirror.fromTextArea(elem, {
-  indentUnit: 2,
-  indentGuide: true,
-});
+2.初始化：
 ```
+    <script>
+      CodeMirror.fromTextArea(document.getElementById('example1'), {
+        lineNumbers: true,
+        tabSize: 4,
+        indentUnit: 2,
+        indentWithTabs: true,
+        mode: 'text/x-csrc',
+        indentGuide: true,
+      });
 
-4. Style it with some css using the classname `cm-indent-guide`. Example:
-
-```css
-.cm-indent-guide {
-  position: relative;
-  border-left: 1px dotted #bbb;
-}
+      CodeMirror.fromTextArea(document.getElementById('example2'), {
+        lineNumbers: true,
+        tabSize: 2,
+        indentUnit: 2,
+        indentWithTabs: true,
+        mode: 'text/x-csrc',
+        indentGuide: {
+          hideFirst: true,
+        },
+      });
+    </script>
 ```
+其中只有设置tabSize: 4和indentUnit: 2的情况下，空格显示点号，Tab显示箭头，如demo中的index.html。
